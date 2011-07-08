@@ -1,0 +1,15 @@
+[user]
+	name = Android Dreams
+	email = bladerunnerdreams@gmail.com
+[push]
+	default = matching
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+[core]
+	editor = gvim --nofork
+[color "status"]
+	changed = yellow
+	added = green
+	untracked = red
