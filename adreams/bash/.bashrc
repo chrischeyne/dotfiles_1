@@ -136,4 +136,5 @@ export PATH=$PATH:${RVM_PATH}
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 
 alias h='history'
+export PAGER=most
 

@@ -1,9 +1,6 @@
 set nocompatible
 set nu
 filetype plugin on
-let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
-map T :TaskList<CR>
-map P :TlistToggle<CR>
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 set expandtab
 set textwidth=79
@@ -82,5 +79,17 @@ set ruler           " show the cursor position all the time
 if &term == "xterm-color"
   fixdel
 endif
+
+" python IDE additions
+"
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
+let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+map T :TaskList<CR>
+map P :TlistToggle<CR>
+map <C-J> <C-W>j<C-W>_
+map <C-K> <C-W>k<C-W>_
 
 
