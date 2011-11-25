@@ -92,9 +92,12 @@ map P :TlistToggle<CR>
 map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
 
-function! StripWhitespace ()
+function! StripWhiteSpace ()
     exec ':%s/ \+$//gc'
 endfunction
-map ,s :call StripWhitespace ()<CR>
+map ,s :call StripWhiteSpace ()<CR>
 
+" snippets for web2py
+"
+" Fri Nov 25 11:23:39 GMT 2011
 
